@@ -1,0 +1,139 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/girl"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.universl.sinhalaastrologyapp.TouchActivity" >
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:clickable="true"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignLeft="@+id/ImageView05"
+            android:layout_below="@+id/ImageView05"
+            android:layout_marginTop="42dp"
+            android:src="@drawable/circle16" />
+
+        <ImageView
+            android:id="@+id/ImageView07"
+            android:layout_width="16dp"
+            android:clickable="true"
+            android:layout_height="16dp"
+            android:layout_below="@+id/ImageView04"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="61dp"
+            android:layout_toLeftOf="@+id/ImageView04"
+            android:src="@drawable/circle16" />
+
+        <ImageView
+            android:id="@+id/ImageView09"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/ImageView08"
+            android:layout_toRightOf="@+id/ImageView10"
+            android:clickable="true"
+            android:src="@drawable/circle16" />
+
+        <ImageView
+            android:id="@+id/ImageView05"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="73dp"
+            android:layout_marginTop="74dp"
+            android:clickable="true"
+            android:src="@drawable/circle16" />
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ImageView10"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:src="@drawable/circle16" />
+
+        <ImageView
+            android:id="@+id/ImageView11"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/ImageView02"
+            android:layout_marginTop="34dp"
+            android:layout_toRightOf="@+id/ImageView04"
+            android:clickable="true"
+            android:src="@drawable/circle16" />
+
+        <ImageView
+            android:id="@+id/ImageView12"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/ImageView05"
+            android:layout_toRightOf="@+id/ImageView01"
+            android:clickable="true"
+            android:src="@drawable/circle16" />
+
+        <ImageView
+            android:id="@+id/ImageView06"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignLeft="@+id/ImageView07"
+            android:layout_below="@+id/ImageView01"
+            android:clickable="true"
+            android:src="@drawable/circle16" />
+
+        <ImageView
+            android:id="@+id/ImageView04"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/ImageView06"
+            android:layout_toLeftOf="@+id/ImageView12"
+            android:clickable="true"
+            android:src="@drawable/circle16" />
+
+        <ImageView
+            android:id="@+id/ImageView03"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/ImageView04"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/ImageView07"
+            android:clickable="true"
+            android:src="@drawable/circle16" />
+
+        <ImageView
+            android:id="@+id/ImageView08"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/ImageView07"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/ImageView07"
+            android:clickable="true"
+            android:src="@drawable/circle16" />
+
+        <ImageView
+            android:id="@+id/ImageView10"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/ImageView09"
+            android:layout_marginTop="74dp"
+            android:layout_toLeftOf="@+id/ImageView03"
+            android:clickable="true"
+            android:src="@drawable/circle16" />
+
+    </RelativeLayout>
+
+</ScrollView>

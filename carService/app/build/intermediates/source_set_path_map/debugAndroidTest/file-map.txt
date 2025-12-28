@@ -1,0 +1,5 @@
+com.uapps.dehalakshana.test.app-jetified-core-1.6.1-0 C:\Users\user\.gradle\caches\transforms-3\cdaa1e4cacd1988f536c03ac584c5eb1\transformed\jetified-core-1.6.1\res
+com.uapps.dehalakshana.test.app-androidTest-1 D:\dehalakshanabitbucketupdate\DehaLakshana\app\build\generated\res\resValues\androidTest\debug
+com.uapps.dehalakshana.test.app-mergeDebugAndroidTestResources-2 D:\dehalakshanabitbucketupdate\DehaLakshana\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.uapps.dehalakshana.test.app-mergeDebugAndroidTestResources-3 D:\dehalakshanabitbucketupdate\DehaLakshana\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.uapps.dehalakshana.test.app-merged_res-4 D:\dehalakshanabitbucketupdate\DehaLakshana\app\build\intermediates\merged_res\debugAndroidTest

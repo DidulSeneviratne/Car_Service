@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/drawable_bg_edittext.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/drawable/bg_edittext.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/drawable_ic_money.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/drawable/ic_money.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/layout_activity_search_result.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/layout/activity_search_result.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/layout_activity_main.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/layout_activity_fares.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/layout/activity_fares.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/drawable_bg_search_card.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/drawable/bg_search_card.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/menu_menu_bottom_nav.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/menu/menu_bottom_nav.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/drawable_ic_location_on.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/drawable/ic_location_on.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/layout_item_list.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/layout/item_list.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/drawable_ic_calendar.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/drawable/ic_calendar.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/drawable_ic_map.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/drawable/ic_map.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.uapps.dehalakshana.app-merged_res-32:/layout_activity_routes.xml.flat",
+        "source": "com.uapps.dehalakshana.app-main-34:/layout/activity_routes.xml"
+    }
+]

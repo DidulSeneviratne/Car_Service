@@ -1,0 +1,4 @@
+# Referenced at C:\Users\Pradeep\Desktop\wix\universldev-dehalakshana_app-d4e3a5500fb3\DehaLakshana\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:19
+-keep class android.support.v4.app.CoreComponentFactory { <init>(); }
+# Referenced at C:\Users\Pradeep\Desktop\wix\universldev-dehalakshana_app-d4e3a5500fb3\DehaLakshana\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:19
+-keep class androidx.multidex.MultiDexApplication { <init>(); }

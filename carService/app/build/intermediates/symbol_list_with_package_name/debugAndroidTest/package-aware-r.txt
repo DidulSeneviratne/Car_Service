@@ -1,0 +1,3 @@
+com.uapps.dehalakshana.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvUserNameAppointmentOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User: John Doe"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUserPhoneAppointmentOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: 077-1234567"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/tvUserLocationAppointmentOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: Colombo 06"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/tvProblemOwner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Problem: Engine misfire on startup"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvVisitTypeOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit Type: Pick-up"
+            android:layout_marginTop="2dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutOwnerButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnRejectAppointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/btnApproveAppointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approve"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
