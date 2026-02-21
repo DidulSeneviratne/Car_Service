@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvReviewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write a Review"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Review Input -->
+    <EditText
+        android:id="@+id/etReview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Share your experience..."
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:maxLines="6" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmitReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Review"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

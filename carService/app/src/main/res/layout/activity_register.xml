@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/scrollRegister"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:padding="24dp">
 
         <TextView
@@ -17,85 +19,79 @@
             android:text="Create Account"
             android:textSize="22sp"
             android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <!-- Common fields -->
 
-        <com.google.android.material.textfield.TextInputLayout
+        <TextView
             android:id="@+id/tilFullName"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Full Name"
+            android:text="Name"
             app:layout_constraintTop_toBottomOf="@id/tvRegisterTitle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp"/>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etFullName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <TextView
             android:id="@+id/tilEmailReg"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:text="Email"
             app:layout_constraintTop_toBottomOf="@id/tilFullName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="12dp">
+            android:layout_marginTop="12dp"/>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etEmailReg"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress" />
-        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmailReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
 
-        <com.google.android.material.textfield.TextInputLayout
+        <TextView
             android:id="@+id/tilPhoneReg"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Phone Number"
+            android:text="Phone Number"
             app:layout_constraintTop_toBottomOf="@id/tilEmailReg"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="12dp">
+            android:layout_marginTop="12dp"/>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPhoneReg"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="phone" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhoneReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone" />
 
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <TextView
             android:id="@+id/tilPasswordReg"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:text="Password"
             app:passwordToggleEnabled="true"
             app:layout_constraintTop_toBottomOf="@id/tilPhoneReg"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="12dp">
+            android:layout_marginTop="12dp"/>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPasswordReg"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword" />
-
-        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPasswordReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
 
         <!-- Role selection -->
 
@@ -111,7 +107,7 @@
 
         <RadioGroup
             android:id="@+id/rgRole"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/tvSelectRole"
@@ -138,41 +134,39 @@
 
         <LinearLayout
             android:id="@+id/layoutUserFields"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:visibility="gone"
             app:layout_constraintTop_toBottomOf="@id/rgRole"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="30dp">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <TextView
                 android:id="@+id/tilVehicleModel"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Vehicle Model">
+                android:text="Vehicle Model"/>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etVehicleModel"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etVehicleModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-            <com.google.android.material.textfield.TextInputLayout
+            <TextView
                 android:id="@+id/tilVehicleType"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Vehicle Type (Car, Bike, etc.)"
-                android:layout_marginTop="8dp">
+                android:text="Vehicle Type (Car, Bike, etc.)"
+                android:layout_marginTop="8dp"/>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etVehicleType"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etVehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
 
@@ -180,81 +174,117 @@
 
         <LinearLayout
             android:id="@+id/layoutOwnerFields"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:visibility="gone"
             app:layout_constraintTop_toBottomOf="@id/rgRole"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="30dp">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <TextView
                 android:id="@+id/tilBusinessRegNo"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Business Registration Number">
+                android:text="Business Registration Number"/>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etBusinessRegNo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etBusinessRegNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/tilBusinessName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business Name"/>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etBusinessName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
                 android:id="@+id/tilBusinessType"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Business Type (Garage, Battery Shop, etc.)"
-                android:layout_marginTop="8dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etBusinessType"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
+                android:text="Business Type (Garage, Battery Shop, etc.)"
+                android:layout_marginTop="8dp"/>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilBusinessLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Business Type"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/etBusinessType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:focusable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tilBusinessDescription"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Location"
-                android:layout_marginTop="8dp">
+                android:text="Short Business Description"
+                android:layout_marginTop="8dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etBusinessLocation"
+                    android:id="@+id/etBusinessDescription"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:maxLines="6"
+                    android:gravity="top|start"
+                    android:scrollbars="vertical" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <TextView
+                android:id="@+id/tilBusinessAddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_marginTop="8dp"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etBusinessAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
                 android:id="@+id/tilBusinessPhone"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Telephone Number(s)"
-                android:layout_marginTop="8dp">
+                android:text="Telephone Number(s)"
+                android:layout_marginTop="8dp"/>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etBusinessPhone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="phone" />
-
-            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etBusinessPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
 
         </LinearLayout>
 
         <Button
             android:id="@+id/btnRegister"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="Sign Up"
             app:layout_constraintTop_toBottomOf="@id/layoutOwnerFields"
             app:layout_constraintStart_toStartOf="parent"
@@ -262,6 +292,6 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 </ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvReviewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place a Appointment"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Review Input -->
+    <EditText
+        android:id="@+id/etProblem"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Enter your problem..."
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:maxLines="6" />
+
+    <!-- Location -->
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Location"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Visit Type Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visit Type"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Visit Type Spinner -->
+    <Spinner
+        android:id="@+id/spVisitType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmitAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Appointment"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
