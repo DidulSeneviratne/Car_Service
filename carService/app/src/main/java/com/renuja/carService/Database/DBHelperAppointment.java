@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.renuja.carService.models.Appointment;
+import com.renuja.carService.models.UserAppointment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -107,5 +108,45 @@ public class DBHelperAppointment extends SQLiteOpenHelper {
         db.close();
     }
 
+    public List<UserAppointment> getUserAppointments(int userId) {
+
+        List<UserAppointment> list = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.rawQuery(
+                "SELECT appointments.id, appointments.appointment_status, " +
+                        "appointments.problem, appointments.visit_type, appointments.location, " +
+
+                        "owners.business_name, owners.business_address, owners.business_phone, owners.business_type " +
+
+                        "FROM appointments " +
+                        "JOIN owners ON owners.id = appointments.owner_id " +
+                        "WHERE appointments.user_id = ?",
+                new String[]{String.valueOf(userId)}
+        );
+
+        if (cursor.moveToFirst()) {
+            do {
+                UserAppointment model = new UserAppointment();
+
+                model.appointmentId = cursor.getInt(0);
+                model.status = cursor.getString(1);
+                model.problem = cursor.getString(2);
+                model.visitType = cursor.getString(3);
+                model.location = cursor.getString(4);
+
+                model.businessName = cursor.getString(5);
+                model.businessAddress = cursor.getString(6);
+                model.businessPhone = cursor.getString(7);
+                model.businessType = cursor.getString(8);
+
+                list.add(model);
+
+            } while (cursor.moveToNext());
+        }
+
+        cursor.close();
+        return list;
+    }
 
 }

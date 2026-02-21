@@ -39,7 +39,7 @@ public class AppointmentsAdapter
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.item_owner_appoinment, parent, false);
+                .inflate(R.layout.item_owner_appointment, parent, false);
 
         return new ViewHolder(view);
     }
